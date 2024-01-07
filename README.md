@@ -4,3 +4,8 @@ Follow the documentation [here](https://bcnrust.github.io/devbcn-workshop/index.
 ```bash
 cargo shuttle run
 ```
+
+## Deploy to shuttle
+```bash
+cargo shuttle deploy
+```
