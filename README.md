@@ -3,14 +3,14 @@ Follow the documentation [here](https://bcnrust.github.io/devbcn-workshop/index.
 <br />
 Video resume [here](https://youtu.be/DCpILwGas-M?t=4822)
 <br />
-Docs resume [here](https://bcnrust.github.io/devbcn-workshop/backend/09_debugging.html)
+Docs resume [here](https://bcnrust.github.io/devbcn-workshop/backend/10_instrumentation.html)
 
 ## Cargo.toml
 Changel sqlx <b>features</b> from `"runtime-actix-native-tls"` to `"runtime-tokio-native-tls"`
 
 ## Run applicaton
 ```bash
-cargo shuttle run
+cargo watch -qcx 'shuttle run'
 ```
 
 ### Shuttle command lists
