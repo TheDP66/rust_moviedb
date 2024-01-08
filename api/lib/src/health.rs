@@ -1,8 +1,16 @@
-use actix_web::get;
+use actix_web::{get, HttpResponse};
 
 #[get("/")]
 async fn hello_world() -> &'static str {
     "Hello World!"
+}
+
+#[get("/health")]
+async fn health() -> HttpResponse {
+    HttpResponse::Ok()
+        .append_header(("x-version", "gamma"))
+        .append_header(("x-thankyou", "everyone live"))
+        .finish()
 }
 
 #[get("/version")]
