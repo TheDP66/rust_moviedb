@@ -1,30 +1,9 @@
-use std::env;
-
 use actix_web::{get, web::ServiceConfig};
 use shuttle_actix_web::ShuttleActixWeb;
 use shuttle_runtime::CustomError;
 use sqlx::Executor;
 
-#[get("/")]
-async fn hello_world() -> &'static str {
-    "Hello World!\r\n"
-}
-
-#[tracing::instrument]
-#[get("/version")]
-async fn version(db: actix_web::web::Data<sqlx::PgPool>) -> String {
-    // ? tracing::info used like console.log
-    tracing::info!("Getting version");
-
-    let result = sqlx::query_scalar("SELECT 'beta (from pg)\r\n'")
-        .fetch_one(db.get_ref())
-        .await;
-
-    match result {
-        Ok(version) => version,
-        Err(e) => format!("Error: {:?}", e),
-    }
-}
+use api_lib::health::{hello_world, version};
 
 #[shuttle_runtime::main]
 async fn actix_web(
