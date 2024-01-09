@@ -22,7 +22,9 @@ async fn actix_web(
         //     .service(health);
 
         // ? Method 2: using macros
-        cfg.app_data(pool).configure(api_lib::health::service);
+        cfg.app_data(pool)
+            .configure(api_lib::health::service)
+            .configure(api_lib::films::service);
     };
 
     Ok(config.into())
