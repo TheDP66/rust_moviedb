@@ -16,3 +16,6 @@ sqlx = { version = "0.7.3", default-features = false, features = [
     "json",
 ] }
 tracing = "0.1.40"
+
+[dev-dependencies]
+actix-rt = "2.9.0"
