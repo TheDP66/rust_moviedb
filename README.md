@@ -1,9 +1,9 @@
 Follow the documentation [here](https://bcnrust.github.io/devbcn-workshop/index.html)
 <br />
 <br />
-Video resume [here](https://youtu.be/DCpILwGas-M?t=4822)
+Video resume [here](https://youtu.be/DCpILwGas-M?t=6321)
 <br />
-Docs resume [here](https://bcnrust.github.io/devbcn-workshop/backend/10_instrumentation.html)
+Docs resume [here](https://bcnrust.github.io/devbcn-workshop/backend/14_configure_method.html)
 
 ## Cargo.toml
 Changel sqlx <b>features</b> from `"runtime-actix-native-tls"` to `"runtime-tokio-native-tls"`
