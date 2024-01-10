@@ -9,3 +9,11 @@ edition = "2021"
 uuid = { version = "1.6.1", features = ["serde", "v4", "js"] }
 chrono = { version = "0.4.31", features = ["serde"] }
 serde = { version = "1.0.195", features = ["derive"] }
+sqlx = { version = "0.7.3", default-features = false, features = [
+    "runtime-tokio-native-tls",
+    "macros",
+    "postgres",
+    "uuid",
+    "chrono",
+    "json",
+] }

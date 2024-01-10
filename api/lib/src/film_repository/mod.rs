@@ -1,3 +1,5 @@
+mod postgres_film_repository;
+
 use shared::models::{CreateFilm, Film};
 use uuid::Uuid;
 

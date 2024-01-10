@@ -1,9 +1,9 @@
 Follow the documentation [here](https://bcnrust.github.io/devbcn-workshop/index.html)
 <br />
 <br />
-Video resume [here](https://youtu.be/DCpILwGas-M?t=6322)
+Docs resume [here](https://bcnrust.github.io/devbcn-workshop/backend/20_implementing_trait.html#supporting-webassmembly)
 <br />
-Docs resume [here](https://bcnrust.github.io/devbcn-workshop/backend/16_films_endpoints.html)
+<strike>Video resume [here](https://youtu.be/DCpILwGas-M?t=6322) [DONE]</strike>
 
 ## Cargo.toml
 Changel sqlx <b>features</b> from `"runtime-actix-native-tls"` to `"runtime-tokio-native-tls"`
