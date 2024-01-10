@@ -19,6 +19,8 @@ tracing = "0.1.40"
 shared = { path = "../../shared" }
 serde = "1.0.195"
 serde_json = "1.0.111"
+async-trait = "0.1.77"
+uuid = { version = "1.6.1", features = ["serde", "v4", "js"] }
 
 [dev-dependencies]
 actix-rt = "2.9.0"
