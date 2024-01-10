@@ -1,3 +1,6 @@
+# Install extension `REST CLIENT` first
+# To start press `Send Request` text/button
+
 @host = http://localhost:8010
 @film_id = 6f05e5f2-133c-11ee-be9f-0ab7e0d8c876
 
